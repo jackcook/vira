@@ -10,7 +10,17 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var weatherImage: UIImageView!
+    @IBOutlet weak var shuttleImage: UIImageView!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        weatherImage.tintColor = .white
+        shuttleImage.tintColor = .white
     }
 }
