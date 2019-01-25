@@ -23,13 +23,23 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         Forecast.shared.getWeather { (forecast) in
-            self.weatherLabel.text = "\(Int(forecast.temperatureHigh)) / \(Int(forecast.temperatureLow))"
+            self.weatherLabel.text = "\(Int(forecast.apparentTemperatureHigh)) / \(Int(forecast.apparentTemperatureLow))"
         }
         
         MITShuttle.shared.getPredictions { (stop) in
-            let minutes = stop.predictions.map({ Int($0.seconds / 60) })
+            let times = stop.predictions.map({ (prediction) -> String in
+                let seconds = prediction.seconds
+                
+                if seconds < 60 {
+                    return "Arriving"
+                } else if seconds < 120 {
+                    return "1 min"
+                } else {
+                    return "\(Int(seconds / 60)) mins"
+                }
+            })
             
-            self.shuttleLabel.text = "\(minutes[0]) mins, \(minutes[1]) mins"
+            self.shuttleLabel.text = "\(times[0]), \(times[1])"
         }
         
         weatherImage.tintColor = .white
