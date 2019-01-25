@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		749AFCCF8DBFD3C2B1710C01 /* Pods_Vira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B19A73E3F9E91A3383F968 /* Pods_Vira.framework */; };
 		EB70056E21FBA3530005760A /* DailyWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70056D21FBA3530005760A /* DailyWeatherForecast.swift */; };
+		EB70057021FBA7230005760A /* MITShuttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70056F21FBA7230005760A /* MITShuttle.swift */; };
+		EB70057221FBA89C0005760A /* ShuttleStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70057121FBA89C0005760A /* ShuttleStop.swift */; };
+		EB70057421FBAA020005760A /* ShuttlePrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70057321FBAA020005760A /* ShuttlePrediction.swift */; };
 		EBBD7B1F21FB9E67007F80DA /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD7B1E21FB9E67007F80DA /* Forecast.swift */; };
 		EBBD7B2121FB9FB7007F80DA /* CurrentWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD7B2021FB9FB7007F80DA /* CurrentWeatherForecast.swift */; };
 		EBE4863A21FB944A0082458D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4863921FB944A0082458D /* AppDelegate.swift */; };
@@ -23,6 +26,9 @@
 		85C21E9A83F280FB64129CA3 /* Pods-Vira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vira.release.xcconfig"; path = "Target Support Files/Pods-Vira/Pods-Vira.release.xcconfig"; sourceTree = "<group>"; };
 		E5B19A73E3F9E91A3383F968 /* Pods_Vira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB70056D21FBA3530005760A /* DailyWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherForecast.swift; sourceTree = "<group>"; };
+		EB70056F21FBA7230005760A /* MITShuttle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MITShuttle.swift; sourceTree = "<group>"; };
+		EB70057121FBA89C0005760A /* ShuttleStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleStop.swift; sourceTree = "<group>"; };
+		EB70057321FBAA020005760A /* ShuttlePrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttlePrediction.swift; sourceTree = "<group>"; };
 		EBBD7B1E21FB9E67007F80DA /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		EBBD7B2021FB9FB7007F80DA /* CurrentWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherForecast.swift; sourceTree = "<group>"; };
 		EBE4863621FB944A0082458D /* Vira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vira.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +84,9 @@
 			children = (
 				EBE4863921FB944A0082458D /* AppDelegate.swift */,
 				EBE4863B21FB944A0082458D /* MainViewController.swift */,
+				EB70056F21FBA7230005760A /* MITShuttle.swift */,
+				EB70057121FBA89C0005760A /* ShuttleStop.swift */,
+				EB70057321FBAA020005760A /* ShuttlePrediction.swift */,
 				EBE4863D21FB944A0082458D /* Main.storyboard */,
 				EBBD7B1E21FB9E67007F80DA /* Forecast.swift */,
 				EBBD7B2021FB9FB7007F80DA /* CurrentWeatherForecast.swift */,
@@ -219,7 +228,10 @@
 			files = (
 				EBE4863C21FB944A0082458D /* MainViewController.swift in Sources */,
 				EBBD7B1F21FB9E67007F80DA /* Forecast.swift in Sources */,
+				EB70057021FBA7230005760A /* MITShuttle.swift in Sources */,
 				EBE4863A21FB944A0082458D /* AppDelegate.swift in Sources */,
+				EB70057421FBAA020005760A /* ShuttlePrediction.swift in Sources */,
+				EB70057221FBA89C0005760A /* ShuttleStop.swift in Sources */,
 				EB70056E21FBA3530005760A /* DailyWeatherForecast.swift in Sources */,
 				EBBD7B2121FB9FB7007F80DA /* CurrentWeatherForecast.swift in Sources */,
 			);

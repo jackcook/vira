@@ -26,6 +26,12 @@ class MainViewController: UIViewController {
             self.weatherLabel.text = "\(Int(forecast.temperatureHigh)) / \(Int(forecast.temperatureLow))"
         }
         
+        MITShuttle.shared.getPredictions { (stop) in
+            let minutes = stop.predictions.map({ Int($0.seconds / 60) })
+            
+            self.shuttleLabel.text = "\(minutes[0]) mins, \(minutes[1]) mins"
+        }
+        
         weatherImage.tintColor = .white
         shuttleImage.tintColor = .white
     }
