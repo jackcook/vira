@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		749AFCCF8DBFD3C2B1710C01 /* Pods_Vira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B19A73E3F9E91A3383F968 /* Pods_Vira.framework */; };
+		EB70056E21FBA3530005760A /* DailyWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70056D21FBA3530005760A /* DailyWeatherForecast.swift */; };
+		EBBD7B1F21FB9E67007F80DA /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD7B1E21FB9E67007F80DA /* Forecast.swift */; };
+		EBBD7B2121FB9FB7007F80DA /* CurrentWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD7B2021FB9FB7007F80DA /* CurrentWeatherForecast.swift */; };
 		EBE4863A21FB944A0082458D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4863921FB944A0082458D /* AppDelegate.swift */; };
 		EBE4863C21FB944A0082458D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4863B21FB944A0082458D /* MainViewController.swift */; };
 		EBE4863F21FB944A0082458D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE4863D21FB944A0082458D /* Main.storyboard */; };
@@ -15,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		634783292AE536A112ADFF06 /* Pods-Vira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vira.debug.xcconfig"; path = "Target Support Files/Pods-Vira/Pods-Vira.debug.xcconfig"; sourceTree = "<group>"; };
+		85C21E9A83F280FB64129CA3 /* Pods-Vira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vira.release.xcconfig"; path = "Target Support Files/Pods-Vira/Pods-Vira.release.xcconfig"; sourceTree = "<group>"; };
+		E5B19A73E3F9E91A3383F968 /* Pods_Vira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB70056D21FBA3530005760A /* DailyWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherForecast.swift; sourceTree = "<group>"; };
+		EBBD7B1E21FB9E67007F80DA /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		EBBD7B2021FB9FB7007F80DA /* CurrentWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherForecast.swift; sourceTree = "<group>"; };
 		EBE4863621FB944A0082458D /* Vira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE4863921FB944A0082458D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE4863B21FB944A0082458D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749AFCCF8DBFD3C2B1710C01 /* Pods_Vira.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E09267CC81AFB7AC87B471B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				634783292AE536A112ADFF06 /* Pods-Vira.debug.xcconfig */,
+				85C21E9A83F280FB64129CA3 /* Pods-Vira.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EBE4862D21FB94490082458D = {
 			isa = PBXGroup;
 			children = (
 				EBE4863821FB944A0082458D /* Vira */,
 				EBE4863721FB944A0082458D /* Products */,
+				E09267CC81AFB7AC87B471B0 /* Pods */,
+				F623DF631318FBCAB2DCF7F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +79,22 @@
 				EBE4863921FB944A0082458D /* AppDelegate.swift */,
 				EBE4863B21FB944A0082458D /* MainViewController.swift */,
 				EBE4863D21FB944A0082458D /* Main.storyboard */,
+				EBBD7B1E21FB9E67007F80DA /* Forecast.swift */,
+				EBBD7B2021FB9FB7007F80DA /* CurrentWeatherForecast.swift */,
+				EB70056D21FBA3530005760A /* DailyWeatherForecast.swift */,
 				EBE4864021FB944C0082458D /* Assets.xcassets */,
 				EBE4864221FB944C0082458D /* LaunchScreen.storyboard */,
 				EBE4864521FB944C0082458D /* Info.plist */,
 			);
 			path = Vira;
+			sourceTree = "<group>";
+		};
+		F623DF631318FBCAB2DCF7F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5B19A73E3F9E91A3383F968 /* Pods_Vira.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBE4864821FB944C0082458D /* Build configuration list for PBXNativeTarget "Vira" */;
 			buildPhases = (
+				04485774D8ED2213D28DDC01 /* [CP] Check Pods Manifest.lock */,
 				EBE4863221FB94490082458D /* Sources */,
 				EBE4863321FB94490082458D /* Frameworks */,
 				EBE4863421FB94490082458D /* Resources */,
+				B75A597B1E2493EAFC6946D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +165,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04485774D8ED2213D28DDC01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vira-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B75A597B1E2493EAFC6946D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vira/Pods-Vira-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vira/Pods-Vira-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EBE4863221FB94490082458D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EBE4863C21FB944A0082458D /* MainViewController.swift in Sources */,
+				EBBD7B1F21FB9E67007F80DA /* Forecast.swift in Sources */,
 				EBE4863A21FB944A0082458D /* AppDelegate.swift in Sources */,
+				EB70056E21FBA3530005760A /* DailyWeatherForecast.swift in Sources */,
+				EBBD7B2121FB9FB7007F80DA /* CurrentWeatherForecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +365,7 @@
 		};
 		EBE4864921FB944C0082458D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 634783292AE536A112ADFF06 /* Pods-Vira.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +384,7 @@
 		};
 		EBE4864A21FB944C0082458D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85C21E9A83F280FB64129CA3 /* Pods-Vira.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -68,7 +68,9 @@
                     </view>
                     <connections>
                         <outlet property="shuttleImage" destination="gFI-9N-jl7" id="zZR-Cx-drw"/>
+                        <outlet property="shuttleLabel" destination="r8e-Qb-qnh" id="8Y6-bS-pjo"/>
                         <outlet property="weatherImage" destination="h5u-ms-UuY" id="tgh-ft-1tB"/>
+                        <outlet property="weatherLabel" destination="wnt-yt-1tx" id="Law-nj-Q1X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
