@@ -8,12 +8,11 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var weatherImage: UIImageView!
-    @IBOutlet weak var weatherLabel: UILabel!
-    @IBOutlet weak var shuttleImage: UIImageView!
-    @IBOutlet weak var shuttleLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    
+    var cells: [ViraCellDescriptor] = []
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -22,27 +21,38 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Forecast.shared.getWeather { (forecast) in
-            self.weatherLabel.text = "\(Int(forecast.apparentTemperatureHigh)) / \(Int(forecast.apparentTemperatureLow))"
+        cells = [
+            Space(height: 16),
+            Header(text: "Good morning, Jack!"),
+            Space(height: 8),
+            Weather(),
+            Shuttle(),
+            Space(height: 32),
+            Header(text: "Today's schedule")
+        ]
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+    
+    // MARK: - UITableViewDataSource Methods
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cells.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cells[indexPath.row].identifier, for: indexPath) as? ViraCell else {
+            return UITableViewCell(style: .default, reuseIdentifier: nil)
         }
         
-        MITShuttle.shared.getPredictions { (stop) in
-            let times = stop.predictions.map({ (prediction) -> String in
-                let seconds = prediction.seconds
-                
-                if seconds < 60 {
-                    return "Arriving"
-                } else if seconds < 120 {
-                    return "1 min"
-                } else {
-                    return "\(Int(seconds / 60)) mins"
-                }
-            })
-            
-            self.shuttleLabel.text = "\(times[0]), \(times[1])"
-        }
-        
-        weatherImage.tintColor = .white
-        shuttleImage.tintColor = .white
+        cell.configure(descriptor: cells[indexPath.row])
+        return cell
+    }
+    
+    // MARK: - UITableViewDelegate Methods
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return cells[indexPath.row].height
     }
 }
