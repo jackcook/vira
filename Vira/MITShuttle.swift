@@ -20,7 +20,8 @@ class MITShuttle {
     
     public func getPredictions(completion: @escaping (ShuttleStop) -> ()) {
 //        let url = URL(string: "http://m.mit.edu/apis/shuttles/routes/tech/stops/simmhl")!
-        let url = URL(string: "http://m.mit.edu/apis/shuttles/routes/saferidecampshut/stops/simmhall")!
+//        let url = URL(string: "http://m.mit.edu/apis/shuttles/routes/saferidecampshut/stops/simmhall")!
+        let url = URL(string: "http://m.mit.edu/apis/shuttles/routes/saferidebostone/stops/mass84_d")!
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: url) { (data, response, error) in
             guard let data = data, let json = try? JSON(data: data) else {

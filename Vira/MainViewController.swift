@@ -12,7 +12,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var tableView: UITableView!
     
-    var cells: [ViraCellDescriptor] = []
+    var cells: [ViraItem] = []
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -22,13 +22,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         
         cells = [
-            Space(height: 16),
-            Header(text: "Good morning, Jack!"),
-            Space(height: 8),
-            Weather(),
-            Shuttle(),
-            Space(height: 32),
-            Header(text: "Today's schedule")
+            .space(16),
+            .header("Good morning, Jack!"),
+            .space(8),
+            .weather,
+            .shuttle,
+            .space(32),
+            .header("Today's schedule")
         ]
         
         tableView.dataSource = self
@@ -42,11 +42,20 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cells[indexPath.row].identifier, for: indexPath) as? ViraCell else {
-            return UITableViewCell(style: .default, reuseIdentifier: nil)
+        let item = cells[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: item.identifier, for: indexPath)
+        
+        switch item {
+        case .header(let text):
+            guard let cell = cell as? HeaderCell else {
+                break
+            }
+            
+            cell.configure(text: text)
+        default:
+            break
         }
         
-        cell.configure(descriptor: cells[indexPath.row])
         return cell
     }
     

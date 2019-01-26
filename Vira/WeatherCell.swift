@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeatherCell: ViraCell {
+class WeatherCell: UITableViewCell {
     
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var weatherLabel: UILabel!
@@ -21,8 +21,8 @@ class WeatherCell: ViraCell {
         super.init(coder: aDecoder)
     }
     
-    override func configure(descriptor: ViraCellDescriptor) {
-        super.configure(descriptor: descriptor)
+    override func awakeFromNib() {
+        super.awakeFromNib()
         
         iconView.tintColor = .white
         

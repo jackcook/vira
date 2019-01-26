@@ -8,11 +8,9 @@
 
 import UIKit
 
-class HeaderCell: ViraCell {
+class HeaderCell: UITableViewCell {
     
     @IBOutlet weak var headerLabel: UILabel!
-    
-    private var header: Header!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -22,11 +20,7 @@ class HeaderCell: ViraCell {
         super.init(coder: aDecoder)
     }
     
-    override func configure(descriptor: ViraCellDescriptor) {
-        guard let header = descriptor as? Header else {
-            return
-        }
-        
-        headerLabel.text = header.text
+    func configure(text: String) {
+        headerLabel.text = text
     }
 }

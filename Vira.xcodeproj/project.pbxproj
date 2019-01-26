@@ -14,18 +14,13 @@
 		EB70057421FBAA020005760A /* ShuttlePrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70057321FBAA020005760A /* ShuttlePrediction.swift */; };
 		EBBD7B1F21FB9E67007F80DA /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD7B1E21FB9E67007F80DA /* Forecast.swift */; };
 		EBBD7B2121FB9FB7007F80DA /* CurrentWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD7B2021FB9FB7007F80DA /* CurrentWeatherForecast.swift */; };
+		EBD0CB2F21FC163100611214 /* ViraItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0CB2E21FC163100611214 /* ViraItem.swift */; };
 		EBE4863A21FB944A0082458D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4863921FB944A0082458D /* AppDelegate.swift */; };
 		EBE4863C21FB944A0082458D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4863B21FB944A0082458D /* MainViewController.swift */; };
 		EBE4863F21FB944A0082458D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE4863D21FB944A0082458D /* Main.storyboard */; };
 		EBE4864121FB944C0082458D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE4864021FB944C0082458D /* Assets.xcassets */; };
 		EBE4864421FB944C0082458D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE4864221FB944C0082458D /* LaunchScreen.storyboard */; };
-		EBF0DFCC21FBCEE500BDEB8F /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0DFCB21FBCEE500BDEB8F /* Space.swift */; };
-		EBF0DFCE21FBCF1D00BDEB8F /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0DFCD21FBCF1D00BDEB8F /* Header.swift */; };
-		EBF0DFD021FBCF8900BDEB8F /* Shuttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0DFCF21FBCF8900BDEB8F /* Shuttle.swift */; };
-		EBF0DFD221FBCF9E00BDEB8F /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0DFD121FBCF9E00BDEB8F /* Weather.swift */; };
-		EBF0DFD421FBCFFD00BDEB8F /* ViraCellDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0DFD321FBCFFD00BDEB8F /* ViraCellDescriptor.swift */; };
 		EBF0DFD821FBD4AC00BDEB8F /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0DFD721FBD4AC00BDEB8F /* HeaderCell.swift */; };
-		EBF0DFDA21FBD63400BDEB8F /* ViraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0DFD921FBD63400BDEB8F /* ViraCell.swift */; };
 		EBF0DFDC21FBD73900BDEB8F /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0DFDB21FBD73900BDEB8F /* WeatherCell.swift */; };
 		EBF0DFDE21FBD75000BDEB8F /* ShuttleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0DFDD21FBD75000BDEB8F /* ShuttleCell.swift */; };
 		EBF0DFE021FBDD3200BDEB8F /* SpaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0DFDF21FBDD3200BDEB8F /* SpaceCell.swift */; };
@@ -41,6 +36,7 @@
 		EB70057321FBAA020005760A /* ShuttlePrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttlePrediction.swift; sourceTree = "<group>"; };
 		EBBD7B1E21FB9E67007F80DA /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		EBBD7B2021FB9FB7007F80DA /* CurrentWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherForecast.swift; sourceTree = "<group>"; };
+		EBD0CB2E21FC163100611214 /* ViraItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViraItem.swift; sourceTree = "<group>"; };
 		EBE4863621FB944A0082458D /* Vira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE4863921FB944A0082458D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE4863B21FB944A0082458D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -48,13 +44,7 @@
 		EBE4864021FB944C0082458D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBE4864321FB944C0082458D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBE4864521FB944C0082458D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBF0DFCB21FBCEE500BDEB8F /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
-		EBF0DFCD21FBCF1D00BDEB8F /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
-		EBF0DFCF21FBCF8900BDEB8F /* Shuttle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shuttle.swift; sourceTree = "<group>"; };
-		EBF0DFD121FBCF9E00BDEB8F /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		EBF0DFD321FBCFFD00BDEB8F /* ViraCellDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViraCellDescriptor.swift; sourceTree = "<group>"; };
 		EBF0DFD721FBD4AC00BDEB8F /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
-		EBF0DFD921FBD63400BDEB8F /* ViraCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViraCell.swift; sourceTree = "<group>"; };
 		EBF0DFDB21FBD73900BDEB8F /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		EBF0DFDD21FBD75000BDEB8F /* ShuttleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleCell.swift; sourceTree = "<group>"; };
 		EBF0DFDF21FBDD3200BDEB8F /* SpaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCell.swift; sourceTree = "<group>"; };
@@ -108,16 +98,11 @@
 				EB70057121FBA89C0005760A /* ShuttleStop.swift */,
 				EB70057321FBAA020005760A /* ShuttlePrediction.swift */,
 				EBBD7B1E21FB9E67007F80DA /* Forecast.swift */,
-				EBF0DFCB21FBCEE500BDEB8F /* Space.swift */,
-				EBF0DFCD21FBCF1D00BDEB8F /* Header.swift */,
-				EBF0DFCF21FBCF8900BDEB8F /* Shuttle.swift */,
-				EBF0DFD121FBCF9E00BDEB8F /* Weather.swift */,
 				EBF0DFD721FBD4AC00BDEB8F /* HeaderCell.swift */,
 				EBF0DFDD21FBD75000BDEB8F /* ShuttleCell.swift */,
-				EBF0DFD321FBCFFD00BDEB8F /* ViraCellDescriptor.swift */,
-				EBF0DFD921FBD63400BDEB8F /* ViraCell.swift */,
 				EBF0DFDF21FBDD3200BDEB8F /* SpaceCell.swift */,
 				EBF0DFDB21FBD73900BDEB8F /* WeatherCell.swift */,
+				EBD0CB2E21FC163100611214 /* ViraItem.swift */,
 				EBBD7B2021FB9FB7007F80DA /* CurrentWeatherForecast.swift */,
 				EB70056D21FBA3530005760A /* DailyWeatherForecast.swift */,
 				EBE4863D21FB944A0082458D /* Main.storyboard */,
@@ -257,19 +242,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE4863C21FB944A0082458D /* MainViewController.swift in Sources */,
-				EBF0DFCC21FBCEE500BDEB8F /* Space.swift in Sources */,
-				EBF0DFDA21FBD63400BDEB8F /* ViraCell.swift in Sources */,
 				EBBD7B1F21FB9E67007F80DA /* Forecast.swift in Sources */,
 				EB70057021FBA7230005760A /* MITShuttle.swift in Sources */,
 				EBF0DFDE21FBD75000BDEB8F /* ShuttleCell.swift in Sources */,
 				EBE4863A21FB944A0082458D /* AppDelegate.swift in Sources */,
-				EBF0DFD421FBCFFD00BDEB8F /* ViraCellDescriptor.swift in Sources */,
+				EBD0CB2F21FC163100611214 /* ViraItem.swift in Sources */,
 				EBF0DFD821FBD4AC00BDEB8F /* HeaderCell.swift in Sources */,
-				EBF0DFD021FBCF8900BDEB8F /* Shuttle.swift in Sources */,
 				EBF0DFE021FBDD3200BDEB8F /* SpaceCell.swift in Sources */,
 				EB70057421FBAA020005760A /* ShuttlePrediction.swift in Sources */,
-				EBF0DFCE21FBCF1D00BDEB8F /* Header.swift in Sources */,
-				EBF0DFD221FBCF9E00BDEB8F /* Weather.swift in Sources */,
 				EBF0DFDC21FBD73900BDEB8F /* WeatherCell.swift in Sources */,
 				EB70057221FBA89C0005760A /* ShuttleStop.swift in Sources */,
 				EB70056E21FBA3530005760A /* DailyWeatherForecast.swift in Sources */,

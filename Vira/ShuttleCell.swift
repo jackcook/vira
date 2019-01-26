@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShuttleCell: ViraCell {
+class ShuttleCell: UITableViewCell {
     
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var shuttleLabel: UILabel!
@@ -21,9 +21,7 @@ class ShuttleCell: ViraCell {
         super.init(coder: aDecoder)
     }
     
-    override func configure(descriptor: ViraCellDescriptor) {
-        super.configure(descriptor: descriptor)
-        
+    override func awakeFromNib() {
         iconView.tintColor = .white
         
         MITShuttle.shared.getPredictions { (stop) in
