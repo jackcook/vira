@@ -10,7 +10,11 @@ import UIKit
 
 class HeaderCell: UITableViewCell {
     
+    // MARK: - Properties
+    
     @IBOutlet weak var headerLabel: UILabel!
+    
+    // MARK: - Initialization
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -19,6 +23,8 @@ class HeaderCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    // MARK: - Public Methods
     
     func configure(text: String) {
         headerLabel.text = text

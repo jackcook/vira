@@ -11,6 +11,8 @@ import SwiftyJSON
 
 struct ShuttleStop {
     
+    // MARK: - Properties
+    
     let id: String
     let url: URL?
     let title: String
@@ -20,6 +22,8 @@ struct ShuttleStop {
     let predictionsURL: URL?
     let routeId: String
     let routeURL: URL?
+    
+    // MARK: - Initialization
     
     init(json: JSON) {
         id = json["id"].string ?? ""

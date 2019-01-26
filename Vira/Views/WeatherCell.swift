@@ -10,8 +10,12 @@ import UIKit
 
 class WeatherCell: UITableViewCell {
     
+    // MARK: - Properties
+    
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var weatherLabel: UILabel!
+    
+    // MARK: - Initialization
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -20,6 +24,8 @@ class WeatherCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    // MARK: - View Life Cycle
     
     override func awakeFromNib() {
         super.awakeFromNib()

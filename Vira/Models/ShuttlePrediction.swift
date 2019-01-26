@@ -10,9 +10,13 @@ import SwiftyJSON
 
 struct ShuttlePrediction {
     
+    // MARK: - Properties
+    
     let vehicleId: String
     let timestamp: Date
     let seconds: Int
+    
+    // MARK: - Initialization
     
     init(json: JSON) {
         vehicleId = json["vehicleId"].string ?? ""

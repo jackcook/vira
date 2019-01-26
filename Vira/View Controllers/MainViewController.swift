@@ -10,6 +10,8 @@ import UIKit
 
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    // MARK: - Properties
+    
     @IBOutlet weak var tableView: UITableView!
     
     var cells: [ViraItem] = []
@@ -17,6 +19,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    // MARK: - View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()

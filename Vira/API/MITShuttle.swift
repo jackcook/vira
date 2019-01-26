@@ -10,6 +10,8 @@ import SwiftyJSON
 
 class MITShuttle {
     
+    // MARK: - Shared Instance
+    
     public class var shared: MITShuttle {
         struct Static {
             static let instance = MITShuttle()
@@ -17,6 +19,8 @@ class MITShuttle {
         
         return Static.instance
     }
+    
+    // MARK: - Public Methods
     
     public func getPredictions(completion: @escaping (ShuttleStop) -> ()) {
 //        let url = URL(string: "http://m.mit.edu/apis/shuttles/routes/tech/stops/simmhl")!

@@ -10,6 +10,8 @@ import SwiftyJSON
 
 struct CurrentWeatherForecast {
     
+    // MARK: - Properties
+    
     let time: Date
     let summary: String
     let icon: String
@@ -29,6 +31,8 @@ struct CurrentWeatherForecast {
     let uvIndex: Float
     let visibility: Float
     let ozone: Float
+    
+    // MARK: - Initialization
     
     init?(json: JSON) {
         guard let current = json["currently"].dictionary else {

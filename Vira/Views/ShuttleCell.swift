@@ -10,8 +10,12 @@ import UIKit
 
 class ShuttleCell: UITableViewCell {
     
+    // MARK: - Properties
+    
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var shuttleLabel: UILabel!
+    
+    // MARK: - Initialization
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -20,6 +24,8 @@ class ShuttleCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    // MARK: - View Life Cycle
     
     override func awakeFromNib() {
         iconView.tintColor = .white

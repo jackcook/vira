@@ -10,6 +10,8 @@ import SwiftyJSON
 
 struct DailyWeatherForecast {
     
+    // MARK: - Properties
+    
     let time: Date
     let summary: String
     let icon: String
@@ -50,6 +52,8 @@ struct DailyWeatherForecast {
     let apparentTemperatureMinTime: Date
     let apparentTemperatureMax: Float
     let apparentTemperatureMaxTime: Date
+    
+    // MARK: - Initialization
     
     init?(json: JSON) {
         guard let json = json["daily"]["data"].array?.first else {

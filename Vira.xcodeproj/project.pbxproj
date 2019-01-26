@@ -71,6 +71,46 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EBD0CB3021FC1A2D00611214 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBE4863B21FB944A0082458D /* MainViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EBD0CB3121FC1A3400611214 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBF0DFD721FBD4AC00BDEB8F /* HeaderCell.swift */,
+				EBF0DFDD21FBD75000BDEB8F /* ShuttleCell.swift */,
+				EBF0DFDF21FBDD3200BDEB8F /* SpaceCell.swift */,
+				EBF0DFDB21FBD73900BDEB8F /* WeatherCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EBD0CB3221FC1A3E00611214 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBBD7B2021FB9FB7007F80DA /* CurrentWeatherForecast.swift */,
+				EB70056D21FBA3530005760A /* DailyWeatherForecast.swift */,
+				EB70057121FBA89C0005760A /* ShuttleStop.swift */,
+				EB70057321FBAA020005760A /* ShuttlePrediction.swift */,
+				EBD0CB2E21FC163100611214 /* ViraItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBD0CB3321FC1A4F00611214 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EB70056F21FBA7230005760A /* MITShuttle.swift */,
+				EBBD7B1E21FB9E67007F80DA /* Forecast.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		EBE4862D21FB94490082458D = {
 			isa = PBXGroup;
 			children = (
@@ -92,19 +132,11 @@
 		EBE4863821FB944A0082458D /* Vira */ = {
 			isa = PBXGroup;
 			children = (
+				EBD0CB3321FC1A4F00611214 /* API */,
+				EBD0CB3221FC1A3E00611214 /* Models */,
+				EBD0CB3121FC1A3400611214 /* Views */,
+				EBD0CB3021FC1A2D00611214 /* View Controllers */,
 				EBE4863921FB944A0082458D /* AppDelegate.swift */,
-				EBE4863B21FB944A0082458D /* MainViewController.swift */,
-				EB70056F21FBA7230005760A /* MITShuttle.swift */,
-				EB70057121FBA89C0005760A /* ShuttleStop.swift */,
-				EB70057321FBAA020005760A /* ShuttlePrediction.swift */,
-				EBBD7B1E21FB9E67007F80DA /* Forecast.swift */,
-				EBF0DFD721FBD4AC00BDEB8F /* HeaderCell.swift */,
-				EBF0DFDD21FBD75000BDEB8F /* ShuttleCell.swift */,
-				EBF0DFDF21FBDD3200BDEB8F /* SpaceCell.swift */,
-				EBF0DFDB21FBD73900BDEB8F /* WeatherCell.swift */,
-				EBD0CB2E21FC163100611214 /* ViraItem.swift */,
-				EBBD7B2021FB9FB7007F80DA /* CurrentWeatherForecast.swift */,
-				EB70056D21FBA3530005760A /* DailyWeatherForecast.swift */,
 				EBE4863D21FB944A0082458D /* Main.storyboard */,
 				EBE4864021FB944C0082458D /* Assets.xcassets */,
 				EBE4864221FB944C0082458D /* LaunchScreen.storyboard */,

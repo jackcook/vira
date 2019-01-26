@@ -10,10 +10,14 @@ import UIKit
 
 enum ViraItem {
     
+    // MARK: - Cases
+    
     case header(String)
     case weather
     case shuttle
     case space(CGFloat)
+    
+    // MARK: - Properties
     
     var height: CGFloat {
         switch self {

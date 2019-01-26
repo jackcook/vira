@@ -10,6 +10,8 @@ import SwiftyJSON
 
 class Forecast {
     
+    // MARK: - Shared Instance
+    
     public class var shared: Forecast {
         struct Static {
             static let instance = Forecast()
@@ -17,6 +19,8 @@ class Forecast {
         
         return Static.instance
     }
+    
+    // MARK: - Public Methods
     
     public func getWeather(completion: @escaping (DailyWeatherForecast) -> ()) {
         let url = URL(string: "https://api.darksky.net/forecast/5c71a9f520d09d38b1feaeca3f988a07/42.3601,-71.0942")!
